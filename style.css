@@ -15,11 +15,18 @@ body{
 .clock{
     width: fit-content;
     height: fit-content;
-    background-color: bisque;
+    background-color: black;
     padding: 1rem;
     border-radius: 1rem;
 }
 
-.clock *{
-    padding: .5rem;
+#datediv{
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+}
+
+#timediv{
+    font-size: 3rem;
+    color: white;
 }

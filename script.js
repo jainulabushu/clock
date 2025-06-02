@@ -1,20 +1,22 @@
 const datediv = document.getElementById("datediv")
+const timediv = document.getElementById("timediv")
 
 
 function updatetime(){
     let now = new Date();
 
-    let year = now.getFullYear();
-    let month = now.getMonth();
+    let dateonly = now.toDateString();
+    datediv.innerHTML = dateonly;
 
-    datediv.innerHTML = typeof(now);
+    let hour = now.getHours();
+    let min = now.getMinutes();
+    let sec = now.getSeconds();
 
 
-    // let hour = now.getHours();
-    // let min  = now.getMinutes();
-    // let sec = now.getSeconds();
 
-    // let currentTime = hour, min, sec;
+    timediv.innerHTML = `${hour} : ${min} : ${sec}`;
+
+
 
 
 
