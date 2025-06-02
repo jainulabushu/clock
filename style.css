@@ -7,26 +7,51 @@
 
 body{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
-.clock{
+#analogclock{
+    
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: rgb(48, 49, 56);
+
+}
+
+#secStick{
+    width: 1%;
+    height: 1%;
+    padding-top: 45%;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    left: 50%;
+    top: 10%;
+}
+
+
+#digitalclock{
     width: fit-content;
     height: fit-content;
-    background-color: black;
-    padding: 1rem;
+    background-color: rgb(51, 42, 42);
+    padding: .5rem;
     border-radius: 1rem;
+    margin: 1rem;
 }
 
 #datediv{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem;
     color: white;
 }
 
 #timediv{
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
+    padding: .5rem;
 }
